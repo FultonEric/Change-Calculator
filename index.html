@@ -1,13 +1,39 @@
 
 <!DOCTYPE html>
 <html>
+        <script src="main.js"></script>
+      <link rel="stylesheet" href="style.css">
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
   </head>
   <body>
     <!-- Write your markup here -->
+     <div>
+    <h1>Change Calculator</h1>
+    <form id="change-form">
+      <label for="amount">amount due:</label>
+      <input type="number" id="amount-due" name="amount-due" required>
+      <label for="paid">amount recieved:</label>
+      <input type="number" id="amount-received" name="amount-received" required>
+    </form>
+    <button type="submit" id="calculate-change">Calculate Change</button>
+      <p id="amount-due-output"> Amount Due: </p>
+      <p id="hundreds-output"> Hundreds: </p>
+      <p id="fifties-output"> Fifties: </p>
+      <p id="twenties-output"> Twenties: </p>
+      <p id="tens-output"> Tens: </p>
+      <p id="fives-output"> Fives:</p>
+      <p id="dollars-output"> Dollars:</p>
+      <p id="quarters-output"> Quarters:</p> 
+      <p id="dimes-output"> Dimes:</p>
+      <p id="nickels-output"> Nickels:</p>
+      <p id="pennies-output"> Pennies:</p>
 
+    <script>
+    document.getElementById('calculate-change').addEventListener('click', calculateChange);
+  </script>
+     </div>
     <!-- Don't forget to add your <script> tag here -->
 
   </body>

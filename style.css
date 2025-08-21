@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+body > * {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #222;
+  font-size: 2rem;
+}
+
+form, #calculate-change, p {
+  font-size: 1.1rem;
+}
+
+/* Card styling */
+form, #calculate-change, p {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+/* Button */
+#calculate-change {
+  background: #6c63ff;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  margin-bottom: 1rem;
+}
+
+#calculate-change:hover {
+  background: #5850ec;
+}
+
+#calculate-change:active {
+  transform: scale(0.98);
+}
+
+/* Outputs */
+p {
+  background: #fff;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Container card */
+body > div {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 350px;
+}
